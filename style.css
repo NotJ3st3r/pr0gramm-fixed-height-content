@@ -8,15 +8,18 @@
 }
 
 .item-image{
-    height: var(--height) !important;
+    max-height: var(--height) !important;
+    grid-column: 2 / span 1 !important;
     width: auto !important;
-    grid-column: 2 / span 1;
 }
 
 .item-image-actual{
-    height: var(--height) !important;
-    width: auto !important;
+    max-height: var(--height) !important;
     position: static;
+}
+
+img{
+    width: auto !important;
 }
 
 .video-controls{
