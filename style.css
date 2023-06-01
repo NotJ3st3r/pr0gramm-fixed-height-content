@@ -3,7 +3,7 @@
 }
 
 .item-image-wrapper{
-    display: grid;
+    display: grid !important;
     grid-template-columns: 1fr auto 1fr;
 }
 
@@ -15,14 +15,15 @@
 
 .item-image-actual{
     max-height: var(--height) !important;
-    position: static;
+    position: static !important;
 }
 
-img{
+img, video{
     width: auto !important;
 }
 
 .video-controls{
+    grid-column: 2 / span 1 !important;    
     width: 100% !important;
-    grid-column: 2 / span 1;
+    justify-self: stretch;
 }
